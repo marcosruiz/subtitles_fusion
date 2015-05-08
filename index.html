@@ -8,20 +8,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/jasny/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/silviomoreto/bootstrap-select.min.css" rel="stylesheet" media="screen">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/jasny-bootstrap.min.js"></script>
+  <script src="js/jasny/jasny-bootstrap.min.js"></script>
+  <script src="js/silviomoreto/bootstrap-select.min.js"></script>
 </head>
 <body>
 
 <div class="container">
   <div class="jumbotron">
-    <h1>Combine subtitles [under construction]</h1>
+    <h1>Combine subtitles</h1>
     <p>2 .srt = 1 .ass</p> 
   </div>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-4">
       <h3>You give me</h3>
       <!-- Top's .srt -->
       <label for="color-top-text">Top's .srt</label>
@@ -43,7 +45,7 @@
         <input type="string" class="form-control" id="color-top-text" placeholder="Enter a top's color">
       </div>
       <!-- Bot's .srt -->
-      <label for="color-top-text">Bot's .srt</label>
+      <label for="color-bot-text">Bot's .srt</label>
       <div class="fileinput fileinput-new input-group" data-provides="fileinput">
         <div class="form-control" data-trigger="fileinput">
           <i class="glyphicon glyphicon-file fileinput-exists"></i> 
@@ -59,7 +61,7 @@
       <!-- Color text bot -->
       <div class="form-group">
         <label for="color-bot-text">Color bot text (For example: #FFFFFF (White)):</label>
-        <input type="string" class="form-control" id="color-top-text" placeholder="Enter a bot's color" defalut="#FFFFFF">
+        <input type="string" class="form-control" id="color-top-text" placeholder="Enter a bot's color" >
       </div>
       <!-- Text size -->
       <div class="form-group">
@@ -69,18 +71,20 @@
       <!-- Tipo de letra -->
       <label for="font-size">Font type:</label>
       <div class="form-group">
-          <select class="form-control input-sm" id="font-type">
+          <select class="selectpicker" id="font-type">
             <option>Arial</option>
             <option>Verdana</option>
             <option>Times New Roman</option>
           </select>
       </div>
+      <!-- Prueba -->
+
       <!-- Generarte button -->
       <button type="button" class="btn btn-primary">Give me my ass bitch!</button>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-8">
       <h3>And I give you</h3>
-      <p>Working...</p>
+      <p>[In process]</p>
     </div>
   </div>
   <div class="container page-footer hidden-xs">
