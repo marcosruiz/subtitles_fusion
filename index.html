@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Marken's home page</title>
+  <title>Combine subtitles</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jasny-bootstrap.min.js"></script>
 </head>
 <body>
 
 <div class="container">
   <div class="jumbotron">
-    <h1>Marken's home page</h1>
-    <p>Advances or retards the subtitles you downloaded</p> 
+    <h1>Combine subtitles [under construction]</h1>
+    <p>2 .srt = 1 .ass</p> 
   </div>
   <div class="row">
     <div class="col-sm-6">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>You give me</h3>
+      <!-- Top's .srt -->
+      <label for="color-top-text">Top's .srt</label>
+      <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+        <div class="form-control" data-trigger="fileinput">
+          <i class="glyphicon glyphicon-file fileinput-exists"></i> 
+          <span class="fileinput-filename"></span>
+        </div>
+        <span class="input-group-addon btn btn-default btn-file">
+          <span class="fileinput-new">Select top's .srt</span>
+          <span class="fileinput-exists">Change</span>
+          <input type="file" name="...">
+        </span>
+        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+      </div>
+      <!-- Color text top -->
+      <div class="form-group">
+        <label for="color-top-text">Color top text (For example: #FFFF00 (Yellow)):</label>
+        <input type="string" class="form-control" id="color-top-text" placeholder="Enter a top's color">
+      </div>
+      <!-- Bot's .srt -->
+      <label for="color-top-text">Bot's .srt</label>
+      <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+        <div class="form-control" data-trigger="fileinput">
+          <i class="glyphicon glyphicon-file fileinput-exists"></i> 
+          <span class="fileinput-filename"></span>
+        </div>
+        <span class="input-group-addon btn btn-default btn-file">
+          <span class="fileinput-new">Select bot's .srt</span>
+          <span class="fileinput-exists">Change</span>
+          <input type="file" name="...">
+        </span>
+        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+      </div>
+      <!-- Color text bot -->
+      <div class="form-group">
+        <label for="color-bot-text">Color bot text (For example: #FFFFFF (White)):</label>
+        <input type="string" class="form-control" id="color-top-text" placeholder="Enter a bot's color" defalut="#FFFFFF">
+      </div>
+      <!-- Text size -->
+      <div class="form-group">
+        <label for="font-size">Font size:</label>
+        <input type="string" class="form-control" id="font-size" placeholder="Enter a font size">
+      </div>
+      <!-- Tipo de letra -->
+      <label for="font-size">Font type:</label>
+      <div class="form-group">
+          <select class="form-control input-sm" id="font-type">
+            <option>Arial</option>
+            <option>Verdana</option>
+            <option>Times New Roman</option>
+          </select>
+      </div>
+      <!-- Generarte button -->
+      <button type="button" class="btn btn-primary">Give me my ass bitch!</button>
     </div>
     <div class="col-sm-6">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>And I give you</h3>
+      <p>Working...</p>
+    </div>
+  </div>
+  <div class="container page-footer hidden-xs">
+    <div class="text-right">
+      <br><br><br><br><br><br>
+      <a href="http://www.github.com/marcosruiz/tutoriali">View on GitHub!</a>
+      <br><br>
     </div>
   </div>
 </div>
